@@ -8,6 +8,8 @@
 - **Hard fork Required**: [Yes | No | Unknown]
 - **Need new Ledger era?**: [Yes | No | Unknown]
 
+**Note**: This PR corresponds to **step 2: Shortlisting** in the [process overview](../README.md#overview). Ensure the CIP has been approved in the CIP repository (step 1) before submitting.
+
 ## What This PR Does
 
 This PR adds a new CIP detail file (`shortlist/CIP-XXXX.md`) to propose this CIP for the shortlist.

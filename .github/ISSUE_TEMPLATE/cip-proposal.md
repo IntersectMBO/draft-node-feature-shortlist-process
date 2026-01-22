@@ -40,5 +40,7 @@ assignees: ''
 
 ---
 
-**Note**: To actually add a CIP to the shortlist, please create a pull request following the guidelines in [CONTRIBUTING.md](../../CONTRIBUTING.md). This issue template is for discussion purposes.
+**Note**: To actually add a CIP to the shortlist, please create a pull request following the guidelines in the [How to Contribute](../../README.md#how-to-contribute) section. This issue template is for discussion purposes.
+
+Before proposing a CIP for shortlisting, ensure the CIP has been approved in the [CIP repository](https://github.com/cardano-foundation/CIPs) (see **step 1: CIP Approval** in the [process overview](../../README.md#overview)).
 
