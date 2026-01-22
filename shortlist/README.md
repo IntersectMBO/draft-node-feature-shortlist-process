@@ -2,6 +2,8 @@
 
 This directory contains the current shortlist of CIPs approved for implementation across Cardano node implementations.
 
+This corresponds to **step 2: Shortlisting** and **step 3: Candidate Review** in the [process overview](../README.md#overview).
+
 ## Files
 
 - **`current-shortlist.md`**: The main shortlist table containing all CIPs currently under consideration (maintained by maintainers)

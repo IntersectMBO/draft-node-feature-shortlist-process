@@ -1,4 +1,4 @@
-# Draft Cardano Node Feature Shortlist Process
+# Draft Cardano Node Shortlist Process
 
 This was inspired by suggestions from @KtorZ and discussions had via Hard Fork working group call.
 
@@ -9,6 +9,7 @@ This was inspired by suggestions from @KtorZ and discussions had via Hard Fork w
 This repository serves as the central hub for the process to maintain a shortlist of CIPs approved for implementation across Cardano node implementations.
 
 It attempts to ensure alignment on core compatibility across Ledger, Consensus, Plutus, and Networking components.
+*And maybe some non-functional requirements*
 
 ## Motivation: Why do we need a process?
 
@@ -40,17 +41,21 @@ The proposed process for managing node feature implementation is:
 
 1. **CIP Approval**: A CIP is written, reviewed, and approved as a viable solution (to a CPS) in the [CIP repository](https://github.com/cardano-foundation/CIPs)
 
-2. **Shortlisting**: Approved CIPs, which require Cardano Node implementation coordination are added to the shortlist maintained within this repo via open pull requests
+2. **Shortlisting**: Approved CIPs, which require Cardano Node implementation coordination are proposed as shortlist candidates.
 
-3. **Quarterly Review**: The shortlist is periodically reviewed and revised in node diversity workshops (once per quarter)
+3. **Candidate Review**: Shortlist candidates receive community/stakeholder review and discussion.
 
-4. **Governance Approval**: Once or twice a year, the short list is proposed to DReps for approval (via Ekklesia or on-chain actions)
+4. **Quarterly Review**: The shortlist is periodically created from shortlist candidates revised in node diversity workshops (once per quarter).
 
-5. **Implementation**:
+5. **Governance Approval**: Once or twice a year, the short list is proposed to DReps for approval (via Ekklesia or on-chain actions). -- maybe something like this?
 
-6. **Hard fork packaging**:
+6. **Budgeting**: Beyond the scope of this process, but with a shortlist implementors are able to plan their implementations and align it with their budget asks.
 
-This repository proposed to facilitate **step 2** - maintaining the shortlist of CIPs to implement.
+7. **Implementation**: Build!
+
+8. **Hard fork packaging**: There will be some process aligned with implementation to coordinate hard forks.
+
+This repository proposed to facilitate **step 2** and **step 3**  - maintaining the shortlist of CIPs to implement.
 
 ## Repository Structure
 
@@ -84,7 +89,7 @@ This repository proposed to facilitate **step 2** - maintaining the shortlist of
 
 The shortlist consists of two parts:
 
-### 1. CIP Detail Files (`shortlist/CIP-XXXX.md`)
+### 1. Shortlist Candidate CIP Files (`shortlist/CIP-XXXX.md`)
 
 Each CIP has its own detail file created by proposers.
 These files contain in-depth information including:
@@ -133,7 +138,7 @@ Maintainers add entries to the table (`current-shortlist.md`) after discussions 
    - Dependencies with explanations
    - Rationale for why the CIP should be shortlisted
 
-3. **Community Discussion**: Some process happens where consensus from key stakeholders is shown via discussions in PR comments or the GitHub Discussions tab
+3. **Community Discussion** (step 3: Candidate Review): Consensus from key stakeholders is shown via discussions in PR comments or the GitHub Discussions tab
 
 4. **Maintainer Review**: Independent maintainers review the PR for format compliance and completeness
 
@@ -141,7 +146,7 @@ Maintainers add entries to the table (`current-shortlist.md`) after discussions 
 
 6. **Table Update**: After merge, maintainers add the CIP to `current-shortlist.md` table
 
-7. **Workshop Inclusion**: Merged CIPs are included in the next quarterly workshop review
+7. **Workshop Inclusion**: Merged CIPs are included in the next quarterly workshop review (see **step 4: Quarterly Review**)
 
 ## Maintainers
 
@@ -149,9 +154,9 @@ Independent maintainers ensure the process continues smoothly:
 
 - **Review PRs**: Review and merge pull requests that add CIPs to the shortlist
 - **Maintain Quality**: Ensure shortlist entries are complete and properly formatted
-- **Facilitate Workshops**: Organize and document quarterly node diversity workshops
+- **Facilitate Workshops**: Organize and document quarterly node diversity workshops (step 4: Quarterly Review)
 - **Update Rankings**: Update rankings based on workshop outcomes
-- **Prepare DRep Submissions**: Compile shortlist for annual/bi-annual DRep approval
+- **Prepare DRep Submissions**: Compile shortlist for annual/bi-annual DRep approval (step 5: Governance Approval)
 - **Process Maintenance**: Keep documentation up-to-date and process running smoothly
 
 Maintainers do not gatekeep which CIPs can be added—they ensure the process is followed correctly.
